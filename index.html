@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Aliza Khanam</title>
@@ -9,194 +8,148 @@
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #e6d8b5;
-      color: #1a1a1a;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #f5f5f5;
+      padding: 80px 10%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #ff4f87;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     section {
-      padding: 100px 10%;
-    }
-
-    .hero {
-      min-height: 100vh;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .image-stack {
-      position: relative;
-      width: 100%;
-      height: 420px;
-      margin-top: 60px;
-    }
-
-    .img {
-      position: absolute;
-      width: 240px;
-      height: 320px;
-      object-fit: cover;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      transition: 0.4s ease;
-    }
-
-    .img:hover {
-      transform: scale(1.05);
-      z-index: 10;
-    }
-
-    .img1 {
-      left: 10%;
-      top: 60px;
-      transform: rotate(-6deg);
-    }
-
-    .img2 {
-      left: 38%;
-      top: 0;
-      transform: rotate(2deg);
-    }
-
-    .img3 {
-      left: 65%;
-      top: 80px;
-      transform: rotate(7deg);
-    }
-
-    .hero h1 {
-      margin-top: 350px;
-      font-size: 4rem;
-      letter-spacing: 6px;
-    }
-
-    .tagline {
-      letter-spacing: 2px;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-    }
-
-    .about,
-    .projects,
-    .contact {
+      padding: 80px 10%;
       max-width: 900px;
       margin: auto;
     }
 
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 20px;
+      color: #ff4f87;
     }
 
-    .about p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .project-card {
-      background: rgba(255, 255, 255, 0.4);
+    .card {
+      background: #ffffff;
       padding: 30px;
       margin-bottom: 25px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-left: 6px solid #ff4f87;
     }
 
-    .project-card h3 {
-      margin: 0 0 10px;
+    ul {
+      padding-left: 20px;
     }
 
-    .contact p {
-      font-size: 1.1rem;
+    ul li {
+      margin-bottom: 10px;
     }
 
     footer {
+      background: #111;
+      color: #f5f5f5;
       text-align: center;
-      padding: 40px;
+      padding: 40px 10%;
       font-size: 0.9rem;
-      opacity: 0.6;
+      margin-top: 60px;
     }
 
-    @media (max-width: 768px) {
-      .image-stack {
-        height: 600px;
-      }
+    a {
+      color: #ff4f87;
+      text-decoration: none;
+    }
 
-      .img {
-        width: 180px;
-        height: 240px;
-      }
+    a:hover {
+      text-decoration: underline;
+    }
 
-      .img1 {
-        left: 5%;
-      }
-
-      .img2 {
-        left: 30%;
-      }
-
-      .img3 {
-        left: 55%;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-        margin-top: 450px;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
       }
     }
   </style>
 </head>
-
 <body>
 
-  <section class="hero">
-    <div class="image-stack">
-      <img src="DSCF0248-modified.JPG" class="img img1">
-      <img src="DSCF0488-modified.JPG" class="img img2">
-      <img src="DSCF0505-modified.JPG" class="img img3">
-    </div>
+  <header>
+    <h1>Aliza Khanam</h1>
+    <p>CSE Undergraduate · Beginner in Tech · Learning Mode</p>
+  </header>
 
-    <h1>ALIZA KHANAM</h1>
-    <p class="tagline">Visual Stories · Tech · Human Moments</p>
-  </section>
-
-  <section class="about">
-    <h2>About</h2>
-    <p>
-      I am a Computer Science undergraduate blending technology with visual storytelling.
-      I explore human moments, digital aesthetics, and meaningful experiences.
-      My work lives at the intersection of logic and emotion.
-    </p>
-  </section>
-
-  <section class="projects">
-    <h2>Selected Works</h2>
-
-    <div class="project-card">
-      <h3>Editorial Portfolio</h3>
-      <p>A handcrafted HTML + CSS website inspired by magazine layouts.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>C Programming Journey</h3>
-      <p>Core fundamentals, problem solving, and logic building.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Photography & Film</h3>
-      <p>Documenting stories through stills and motion.</p>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Computer Science undergraduate exploring the tech world step by step.
+        I am currently focused on learning core concepts, building foundations,
+        and growing consistently as a beginner in web and cloud technologies.
+      </p>
     </div>
   </section>
 
-  <section class="contact">
+  <section>
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Beginner in Web Development</li>
+        <li>Learning Cloud Computing</li>
+        <li>Photo & Video Editing</li>
+        <li>Filmmaking Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I’m Learning</h2>
+
+    <div class="card">
+      <h3>Web Development (Beginner)</h3>
+      <p>Learning how to build simple, clean, and responsive websites using HTML and CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud Computing (Beginner)</h3>
+      <p>Understanding cloud fundamentals, hosting, and deployment basics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Creative Storytelling</h3>
+      <p>Exploring photography, filmmaking, and visual narratives.</p>
+    </div>
+
+  </section>
+
+  <section>
     <h2>Contact</h2>
-    <p>Email: yourname@gmail.com</p>
-    <p>Instagram: @yourhandle</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
+    <div class="card">
+      <p>Email: yourname@gmail.com</p>
+      <p>Instagram: <a href="#">@yourhandle</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+    </div>
   </section>
 
   <footer>
-    © 2026 Aliza Khanam
+    © 2026 Aliza Khanam. All rights reserved.
   </footer>
 
 </body>
-
 </html>
+
