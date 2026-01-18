@@ -2,155 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Aliza Khanam | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #1a1a1a;
-            color: #f2f2f2;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <title>Aliza Khanam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: #111;
-            box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #e6d8b5;
+      color: #1a1a1a;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+    section {
+      padding: 100px 10%;
+    }
 
-        header p {
-            color: #aaa;
-        }
+    .hero {
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        section {
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+    .image-stack {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      margin-top: 60px;
+    }
 
-        h2 {
-            color: #00ffd5;
-            margin-bottom: 20px;
-            text-shadow: 0 0 8px rgba(0, 255, 200, 0.3);
-        }
+    .img {
+      position: absolute;
+      width: 240px;
+      height: 320px;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: 0.4s ease;
+    }
 
-        .card {
-            background: #222;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
-        }
+    .img:hover {
+      transform: scale(1.05);
+      z-index: 10;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+    .img1 {
+      left: 10%;
+      top: 60px;
+      transform: rotate(-6deg);
+    }
 
-        ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #333;
-        }
+    .img2 {
+      left: 38%;
+      top: 0;
+      transform: rotate(2deg);
+    }
 
-        a {
-            color: #00ffd5;
-            text-decoration: none;
-        }
+    .img3 {
+      left: 65%;
+      top: 80px;
+      transform: rotate(7deg);
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    .hero h1 {
+      margin-top: 350px;
+      font-size: 4rem;
+      letter-spacing: 6px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #111;
-            color: #777;
-            font-size: 0.9rem;
-        }
+    .tagline {
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    .about,
+    .projects,
+    .contact {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      .image-stack {
+        height: 600px;
+      }
+
+      .img {
+        width: 180px;
+        height: 240px;
+      }
+
+      .img1 {
+        left: 5%;
+      }
+
+      .img2 {
+        left: 30%;
+      }
+
+      .img3 {
+        left: 55%;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-top: 450px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Aliza Khanam</h1>
-        <p>CSE Undergraduate | Tech + Creativity</p>
-    </header>
+  <section class="hero">
+    <div class="image-stack">
+      <img src="DSCF0248-modified.JPG" class="img img1">
+      <img src="DSCF0488-modified.JPG" class="img img2">
+      <img src="DSCF0505-modified.JPG" class="img img3">
+    </div>
 
-    <section>
-        <h2>About Me</h2>
-        <div class="card">
-            <p>
-                I am Aliza Khanam, a Computer Science undergraduate passionate about learning and blending technology
-                with creativity.
-                I enjoy working on meaningful digital experiences, exploring new tools, and continuously improving my
-                skills.
-                I believe in consistent growth, smart work, and turning ideas into reality.
-            </p>
-        </div>
-    </section>
+    <h1>ALIZA KHANAM</h1>
+    <p class="tagline">Visual Stories · Tech · Human Moments</p>
+  </section>
 
-    <section>
-        <h2>Skills</h2>
-        <div class="card">
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>C Programming</li>
-                <li>Cloud Computing Fundamentals</li>
-                <li>Photo & Video Editing</li>
-                <li>Filmmaking</li>
-            </ul>
-        </div>
-    </section>
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      I am a Computer Science undergraduate blending technology with visual storytelling.
+      I explore human moments, digital aesthetics, and meaningful experiences.
+      My work lives at the intersection of logic and emotion.
+    </p>
+  </section>
 
-    <section>
-        <h2>Projects</h2>
+  <section class="projects">
+    <h2>Selected Works</h2>
 
-        <div class="card">
-            <h3>Personal Portfolio Website</h3>
-            <p>A responsive dark-mode portfolio built using HTML and CSS, deployed on Vercel.</p>
-        </div>
+    <div class="project-card">
+      <h3>Editorial Portfolio</h3>
+      <p>A handcrafted HTML + CSS website inspired by magazine layouts.</p>
+    </div>
 
-        <div class="card">
-            <h3>Learning Journey in C Programming</h3>
-            <p>Practicing problem solving, logic building, and core programming concepts using C.</p>
-        </div>
+    <div class="project-card">
+      <h3>C Programming Journey</h3>
+      <p>Core fundamentals, problem solving, and logic building.</p>
+    </div>
 
-        <div class="card">
-            <h3>Creative Edits and Filmmaking Experiments</h3>
-            <p>Exploring storytelling through photo and video edits while learning filmmaking fundamentals.</p>
-        </div>
+    <div class="project-card">
+      <h3>Photography & Film</h3>
+      <p>Documenting stories through stills and motion.</p>
+    </div>
+  </section>
 
-    </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@gmail.com</p>
+    <p>Instagram: @yourhandle</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: yourname@gmail.com</p>
-            <p>Instagram: <a href="#">@yourhandle</a></p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Aliza Khanam. All rights reserved.</p>
-    </footer>
+  <footer>
+    © 2026 Aliza Khanam
+  </footer>
 
 </body>
 
